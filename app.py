@@ -7,7 +7,7 @@ def web_login(web_link="https://x.com/login"):
     driver = webdriver.Chrome()
     driver.get(web_link)
     time.sleep(5) # Wait to load page , x , y
-
+    print("checking...")
     username_field = driver.find_element(By.XPATH , '//input[@name="text" and @type="text" and contains(@class , "r-30o5oe")]')
     username_field.send_keys("x")
     time.sleep(3)
